@@ -22,6 +22,9 @@ download_unicorn(){
 	printf "请输入节点ID："
 	read -r nodeId <&1
 	sed -i "s/ID_HERE/$nodeId/" soga.conf
+	printf "请输入节点域名："
+	read -r cert_domain <&1
+	sed -i "s/ID_YM/$cert_domain/" soga.conf
 	soga start
 	shon_online
 }
