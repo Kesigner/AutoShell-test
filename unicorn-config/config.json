@@ -1,0 +1,15 @@
+{
+  "poseidon": {
+    "panel": "v2board",
+    "nodeId": ID_HERE,
+    "checkRate": 60,
+    "webapi": "https://miaona.xyz",
+    "token": "miaopasimiaopasimiaopasi",
+
+    "speedLimit": 0,
+    "user": {
+      "maxOnlineIPCount": 0,
+      "speedLimit": 0
+    }
+  }
+}
