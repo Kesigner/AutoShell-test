@@ -23,8 +23,8 @@ download_unicorn(){
 	read -r nodeId <&1
 	sed -i "s/ID_HERE/$nodeId/" soga.conf
 	printf "请输入节点域名："
-	read -r cert_domain <&1
-	sed -i "s/ID_YM/$cert_domain/" soga.conf
+	read -r certDomain <&1
+	sed -i "s/ID_YM/$certDomain/" soga.conf
 	soga start
 	shon_online
 }
@@ -55,8 +55,8 @@ echo ""
 echo -n "   请输入编号: "
 read N
 case $N in
-  1) download_miaona ;;
-  2) start_miaona ;;
+  1) download_unicorn ;;
+  2) start_unicorn ;;
   3) soga status ;;
   4) add_shenji ;;
   5) exit ;;
