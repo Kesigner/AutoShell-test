@@ -53,7 +53,7 @@ shon_online(){
 echo "请选择您需要进行的操作:"
 echo "1) 安装 soga"
 echo "2) 启动 soga"
-echo "3) 查看 soga状态"
+echo "3) 重启 soga"
 echo "4) 查看 soga状态"
 echo "5) 添加审计"
 echo "6) 退出脚本"
@@ -64,8 +64,8 @@ read N
 case $N in
   1) download_unicorn ;;
   2) start_unicorn ;;
-  3) soga status ;;
-  4) restart_unicorn ;;
+  3) restart_unicorn ;;
+  4) soga status ;;
   5) add_shenji ;;
   6) exit ;;
   *) echo "Wrong input!" ;;
