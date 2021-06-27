@@ -16,7 +16,7 @@ download_unicorn(){
 	echo "正在更新配置文件 . . ."
 	rm -f /etc/soga/soga.conf
 	rm -f /etc/soga/blockList
-	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/unicorn-soga.sh
+	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/soga.conf
 	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/blockList
 	cd /etc/soga
 	printf "请输入节点ID："
