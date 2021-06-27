@@ -35,6 +35,12 @@ start_unicorn(){
 	shon_online
 }
 
+restart_unicorn(){
+	echo "正在重启soga . . ."
+	soga restart
+	shon_online
+}
+
 add_shenji(){
 	echo "正在添加审计 . . ."
     	rm -f /etc/soga/blockList
@@ -48,8 +54,9 @@ echo "请选择您需要进行的操作:"
 echo "1) 安装 soga"
 echo "2) 启动 soga"
 echo "3) 查看 soga状态"
-echo "4) 添加审计"
-echo "5) 退出脚本"
+echo "4) 查看 soga状态"
+echo "5) 添加审计"
+echo "6) 退出脚本"
 echo "   Version：1.0.0"
 echo ""
 echo -n "   请输入编号: "
@@ -58,8 +65,9 @@ case $N in
   1) download_unicorn ;;
   2) start_unicorn ;;
   3) soga status ;;
-  4) add_shenji ;;
-  5) exit ;;
+  4) restart_unicorn ;;
+  5) add_shenji ;;
+  6) exit ;;
   *) echo "Wrong input!" ;;
 esac 
 }
