@@ -55,8 +55,9 @@ echo "1) 安装 soga"
 echo "2) 启动 soga"
 echo "3) 重启 soga"
 echo "4) 查看 soga状态"
-echo "5) 添加审计"
-echo "6) 退出脚本"
+echo "5) 查看 soga日志"
+echo "6) 添加审计"
+echo "7) 退出脚本"
 echo "   Version：1.0.0"
 echo ""
 echo -n "   请输入编号: "
@@ -66,8 +67,9 @@ case $N in
   2) start_unicorn ;;
   3) restart_unicorn ;;
   4) soga status ;;
-  5) add_shenji ;;
-  6) exit ;;
+  5) soga loga ;;
+  6) add_shenji ;;
+  7) exit ;;
   *) echo "Wrong input!" ;;
 esac 
 }
