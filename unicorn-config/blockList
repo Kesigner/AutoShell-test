@@ -1,20 +1,16 @@
-
-regexp:(api|ps|sv|offnavi|newvector|ulog\\.imap|newloc)(\\.map|)\\.(baidu|n\\.shifen)\\.com
-regexp:(.*\\.||)(mycard|gash)\\.(com|tw)
-regexp:(.*\\.||)(appledaily|dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian|soundofhope)\.(org|com|net|tw|hk|rocks)
-regexp:(^.*\\@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168)\.(info|biz|com|de|net|org|me|la)
+regexp:(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com
+regexp:(.*.||)(gov|12377|12315|talk.news.pts.org|cread­ers|zhuich­aguoji|efcc.org|cy­ber­po­lice|abolu­owang|tu­idang|epochtimes|ny­times|zhengjian|110.qq|mingjingnews|in­medi­ahk|xin­sheng|banned­book|nt­dtv|12321|se­cretchina|epochweekly|cn.rfi).(cn|com|org|net|club|net|fr|tw|hk)
+regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)
+regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD|IDM|IDMan)(.)
 regexp:BitTorrent protocol
-regexp:Private Tracker protocol
-regexp:(.+\\.|^)(360|so)\.(cn|com)
-regexp:(Subject|HELO|SMTP)
-regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
-regexp:(.*\\.||)(rising|kingsoft|duba|xindubawukong|jinshanduba)\.(com|net|org)
+regexp:(.*\.||)(appledaily|dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian|soundofhope)\.(org|com|net|tw|hk|rocks)
+regexp:(^.*\@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168)\.(info|biz|com|de|net|org|me|la)
+regexp:(.*\.||)(metatrader4|metatrader5|mql5)\.(org|com|net)
+regexp:(.*\.||)(mingjinglive|chinaaid|botanwang|xinsheng|rfi|breakgfw|chengmingmag|jinpianwang|xizang-zhiye|breakgfw|qi-gong|voachinese|mhradio|rfa|edoors|edoors|renminbao|soundofhope|zhengjian|dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|aboluowang|bannedbook|secretchina|dajiyuan|boxun|chinadigitaltimes|huaglad|dwnews|creaders|oneplusnews|rfa)\.(cn|com|org|net|club|net|fr|tw|hk|eu|info|me)
+regexp:(.*\.||)(gov|12377|12315|talk.news.pts.org|creaders|zhuichaguoji|efcc.org|cyberpolice|aboluowang|tuidang|epochtimes|nytimes|dafahao|falundafa|minghui|falunaz|zhengjian|110.qq|mingjingnews|inmediahk|xinsheng|bannedbook|ntdtv|falungong|12321|secretchina|epochweekly|cn.rfi)\.(cn|com|org|net|club|net|fr|tw|hk|eu|info|me)
+regexp:(.*\\.||)(mycard|gash)\\.(com|tw)
+regexp:(torrent|\\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\\.php\\?passkey=|Joker)
 regexp:(\\.guanjia\\.qq\\.com|qqpcmgr|QQPCMGR)
 regexp:(.*\\.||)(taobao)\.(com)
-regexp:(torrent|\\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\\.php\\?passkey=|Joker)
-regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
-regexp:(.*\\.||)(fast|cachefly|hetzner)\.(org|com|net|de)
-regexp:(.*\\.||)(fast)\.(com)
-regexp:(.*\\.||)(gov|12377|12315|talk.news.pts|zhuichaguoji|efcc|cyberpolice|tuidang|nytimes|falundafa|falunaz|110.qq|mingjingnews|inmediahk|xinsheng|12321|epochweekly|cn.rfi|mingjing|chinaaid|botanwang|xinsheng|rfi|breakgfw|chengmingmag|jinpianwang|xizang-zhiye|breakgfw|qi-gong|voachinese|mhradio|rfa|edoors|edoors|renminbao|soundofhope|zhengjian|dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|aboluowang|bannedbook|secretchina|dajiyuan|boxun|chinadigitaltimes|huaglad|dwnews|creaders|oneplusnews|rfa|nextdigital|pincong|gtv|kwok7)\.(cn|com|org|net|club|net|fr|tw|hk|eu|info|me|rocks)
-regexp:(.*\\.||)(fast|cachefly|hetzner)\.(org|com|net|de)
-regexp:(.*\\.||)(beanfun|shenzhoufilm|secretchina|guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|icbc|ccb|boc|bankcomm|abchina|cmbchina|psbc|cebbank|cmbc|pingan|spdb|citicbank|cib|hxb|bankofbeijing|hsbank|tccb|4001961200|bosc|hkbchina|njcb|nbcb|lj-bank|bjrcb|jsbchina|gzcb|cqcbank|czbank|hzbank|srcb|cbhb|cqrcb|grcbank|qdccb|bocd|hrbcb|jlbank|bankofdl|qlbchina|dongguanbank|cscb|hebbank|drcbank|zzbank|bsb|xmccb|hljrcc|jxnxs|gsrcu|fjnx|sxnxs|gx966888|zj96596|hnnxs|ahrcu|shanxinj|hainanbank|scrcu|gdrcu|hbxh|ynrcc|lnrcc|nmgnxs|hebnx|jlnls|js96008|hnnx|sdnxs|firstbank|bot|cotabank|megabank|tcb-bank|landbank|hncb|bankchb|tbb|ktb|tcbbank|scsb|bop|sunnybank|kgibank|fubon|ctbcbank|cathaybk|eximbank|bok|ubot|feib|yuantabank|sinopac|esunbank|taishinbank|jihsunbank|entiebank|hwataibank|csc|skbank|bccto|chacuo|027168|360|so|sohu|sogoucdn|sogou|uc|58|qpic|aboluowang|mhradio|guangming|zhengwunet|soundofhope|yuanming|shenyunperformingarts|epochweekly|tuidang|shenyun|falundata|bannedbook|fgmtv|dswang|zhuichaguoji|xinsheng|proxypoolss|shifen|chinadigitaltimes|metatrader4|metatrader5|unionpay|baifubao|yeepay|99bill|95516|51credit|cmpay|tenpay|lakala|jdpay|mql5|epochtimes|epochtimes-romania|erabaru|lagranepoca|theepochtimes|ntdtv|ntd|ntdtv-dc|minghui|renminbao|dafahao|dongtaiwang|falundafa|wujieliulan|ninecommentaries|xunlei|mycard520|mycard|sandai)\.(org|com|net|fr|de|jp|ru|co.ol|com.tw|org|tv|co.kr|co.jp|top|cn|tk|ga|info|biz|de|me|la)
+regexp:Private Tracker protocol
+regexp:(.*\\.||)(rising|kingsoft|duba|xindubawukong|jinshanduba)\.(com|net|org)
