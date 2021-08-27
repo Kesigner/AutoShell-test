@@ -17,6 +17,7 @@ ask_if()
     ;;
     [nN])
     sed -i '$a tunnel_enable=false' /etc/soga/soga.conf
+	echo -e "\033[32m 已关闭隧道配置~ \033[1m"
     ;;
     *)
     echo "输入错误"
@@ -35,7 +36,6 @@ input_soga()
 download_unicorn(){
 	echo "正在安装soga . . ."
 	bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/soga/master/install.sh)
-    echo -e "\033[32m 正在更新配置文件 . . . \033[1m"
 	rm -f /etc/soga/soga.conf
 	rm -f /etc/soga/blockList
 	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/soga.conf
