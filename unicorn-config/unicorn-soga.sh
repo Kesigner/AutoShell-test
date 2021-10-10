@@ -50,6 +50,9 @@ download_unicorn(){
 	shon_online
 }
 
+    soga restart
+	echo -e "\033[32m 正在重启soga服务端！ \033[1m"
+
 add_shenji(){
 	echo "正在添加审计 . . ."
     	rm -f /etc/soga/blockList
@@ -57,8 +60,6 @@ add_shenji(){
         echo -e "\033[32m 已添加soga审计 \033[1m"
 	shon_online
 }
-
-    soga restart
 
 start_unicorn(){
 	echo "正在启动soga . . ."
