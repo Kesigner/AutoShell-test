@@ -12,11 +12,11 @@ ask_if()
     case $para in 
     [yY])
     input_soga
-    echo -e "\033[32m 已添加隧道配置~ \033[1m"
+    echo -e "已添加隧道配置~"
     ;;
     [nN])
     sed -i '$a tunnel_enable=false' /etc/soga/soga.conf
-    echo -e "\033[32m 已关闭隧道配置~ \033[1m"
+    echo -e "已关闭隧道配置~"
     ;;
     *)
     echo "输入错误"
@@ -39,7 +39,7 @@ download_unicorn(){
 	rm -f /etc/soga/blockList
 	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/soga.conf
 	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/blockList
-    echo -e "\033[32m 已添加soga审计 \033[1m"
+    echo -e "已添加soga审计"
 	cd /etc/soga
 	printf "请输入节点ID："
 	read -r nodeId <&1
@@ -54,7 +54,7 @@ add_shenji(){
 	echo "正在添加审计 . . ."
     	rm -f /etc/soga/blockList
     	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/blockList
-        echo -e "\033[32m 已添加soga审计 \033[1m"
+        echo -e "已添加soga审计"
 	shon_online
 }
 
