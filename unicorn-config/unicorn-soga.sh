@@ -45,11 +45,10 @@ download_unicorn(){
 	read -r nodeId <&1
 	sed -i "s/ID_HERE/$nodeId/" soga.conf
     ask_if
+    soga restart
+	echo -e "正在重启soga服务端！"
 	shon_online
 }
-
-    soga restart
-	echo -e "\033[32m 正在重启soga服务端！ \033[1m"
 
 add_shenji(){
 	echo "正在添加审计 . . ."
