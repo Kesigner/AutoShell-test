@@ -50,6 +50,15 @@ download_unicorn(){
 	shon_online
 }
 
+add_shenji(){
+	echo "正在添加审计 . . ."
+    	rm -f /etc/soga/blockList
+    	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/blockList
+        echo -e "\033[32m 已添加soga审计 \033[1m"
+    	soga restart
+	shon_online
+}
+
 start_unicorn(){
 	echo "正在启动soga . . ."
 	soga start
@@ -59,15 +68,6 @@ start_unicorn(){
 restart_unicorn(){
 	echo "正在重启soga . . ."
 	soga restart
-	shon_online
-}
-
-add_shenji(){
-	echo "正在添加审计 . . ."
-    	rm -f /etc/soga/blockList
-    	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/blockList
-        echo -e "\033[32m 已添加soga审计 \033[1m"
-    	soga restart
 	shon_online
 }
 
