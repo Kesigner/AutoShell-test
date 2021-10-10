@@ -55,9 +55,10 @@ add_shenji(){
     	rm -f /etc/soga/blockList
     	wget -P /etc/soga https://raw.githubusercontent.com/Kesigner/unicorn/main/unicorn-config/blockList
         echo -e "\033[32m 已添加soga审计 \033[1m"
-    	soga restart
 	shon_online
 }
+
+    soga restart
 
 start_unicorn(){
 	echo "正在启动soga . . ."
