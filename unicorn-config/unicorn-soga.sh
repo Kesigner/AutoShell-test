@@ -45,8 +45,6 @@ download_unicorn(){
 	read -r nodeId <&1
 	sed -i "s/ID_HERE/$nodeId/" soga.conf
     ask_if
-    soga restart
-	echo -e "\033[32m 正在重启soga服务端！ \033[1m"
 	shon_online
 }
 
