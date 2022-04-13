@@ -30,7 +30,7 @@ input_soga()
      sed -i '$a tunnel_enable=true' /etc/soga/soga.conf
      sed -i '$a tunnel_type=ws-tunnel' /etc/soga/soga.conf
      sed -i '$a tunnel_password=3a00afbc-302f-41a5-986c-7bcdda0c83a7' /etc/soga/soga.conf
-     sed -i '$a tunnel_method=chacha20-ietf-poly1305' /etc/soga/soga.conf
+     sed -i '$a tunnel_method=aes-256-gcm' /etc/soga/soga.conf
      sed -i '$a tunnel_ws_path=/' /etc/soga/soga.conf
 }
 
